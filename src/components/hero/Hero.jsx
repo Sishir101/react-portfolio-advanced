@@ -154,7 +154,7 @@ function Hero() {
             />
           </div>
 
-          <div className="scale-[0.82] sm:scale-100 origin-center">
+          <div className="absolute left-1/2 top-1/2 size-0 origin-center scale-[0.82] sm:scale-100">
             <OrbitRing items={techStack} radius={260} duration={18} />
           </div>
         </motion.div>
