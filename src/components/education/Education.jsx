@@ -13,7 +13,7 @@ function Education() {
           subtitle="Formal training that supports my work in software development."
         />
 
-        <div className="relative space-y-7 sm:space-y-8 sm:space-y-10 before:absolute before:left-[19px] before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-gradient-to-b before:from-cyan-400/50 before:to-purple-500/30 md:before:left-1/2 md:before:-translate-x-px">
+        <div className="relative space-y-7 sm:space-y-10 before:absolute before:left-[19px] before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-gradient-to-b before:from-cyan-400/50 before:to-purple-500/30 md:before:left-1/2 md:before:-translate-x-px">
           {education.map((item, index) => (
             <AnimateIn key={item.id} delay={index * 0.1}>
               <div
@@ -28,11 +28,11 @@ function Education() {
                 </div>
 
                 <div className="flex-1 pl-12 sm:pl-14 md:pl-0">
-                  <div className={`rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-6 sm:p-8 backdrop-blur-sm transition hover:border-cyan-400/20 hover:bg-white/[0.07] md:max-w-md ${
+                  <div className={`rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-8 backdrop-blur-sm transition hover:border-cyan-400/20 hover:bg-white/[0.07] md:max-w-md ${
                     index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
                   }`}>
                     <p className="text-xs sm:text-sm font-semibold text-cyan-400">{item.period}</p>
-                    <h3 className="mt-1.5 sm:mt-2 text-base sm:text-lg sm:text-xl font-bold text-white leading-tight">{item.degree}</h3>
+                    <h3 className="mt-1.5 sm:mt-2 text-base sm:text-xl font-bold text-white leading-tight">{item.degree}</h3>
                     <p className="mt-1 font-medium text-slate-300 text-sm sm:text-base">{item.institution}</p>
                     <p className="mt-3 sm:mt-4 text-slate-400 leading-relaxed text-sm sm:text-base">{item.description}</p>
                   </div>

@@ -165,9 +165,9 @@ function Contact() {
           <AnimateIn delay={0.12} className="lg:col-span-3">
             <form
               onSubmit={handleSubmit}
-              className="rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-6 sm:p-8 backdrop-blur-sm"
+              className="rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-8 backdrop-blur-sm"
             >
-              <div className="grid gap-4 sm:gap-5 sm:gap-6 sm:grid-cols-2">
+              <div className="grid gap-4 sm:gap-6 sm:grid-cols-2">
                 <label className="block">
                   <span className="mb-1.5 sm:mb-2 block text-xs sm:text-sm font-medium text-slate-300">Name</span>
                   <input

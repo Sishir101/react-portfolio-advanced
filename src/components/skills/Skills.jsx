@@ -16,10 +16,10 @@ function Skills() {
           subtitle="Technologies I use to design, build, and ship full stack applications."
         />
 
-        <div className="grid gap-5 sm:gap-6 sm:gap-8 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-5 sm:gap-8 md:grid-cols-2 xl:grid-cols-4">
           {skillCategories.map((category, catIndex) => (
             <AnimateIn key={category.title} delay={catIndex * 0.1}>
-              <div className="h-full rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-6 sm:p-8 backdrop-blur-sm transition hover:border-cyan-400/20 hover:bg-white/[0.07]">
+              <div className="h-full rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-8 backdrop-blur-sm transition hover:border-cyan-400/20 hover:bg-white/[0.07]">
                 <h3 className="mb-5 sm:mb-6 text-lg sm:text-xl font-bold text-cyan-400">{category.title}</h3>
                 <ul className="space-y-4 sm:space-y-5">
                   {category.skills.map((skill) => {

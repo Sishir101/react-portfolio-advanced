@@ -7,7 +7,7 @@ function ProjectSkeleton() {
   return (
     <div className="h-full animate-pulse overflow-hidden rounded-2xl border border-white/10 bg-white/5">
       <div className="h-36 sm:h-44 bg-white/10" />
-      <div className="space-y-3 sm:space-y-4 p-5 sm:p-6 sm:p-8">
+      <div className="space-y-3 sm:space-y-4 p-5 sm:p-8">
         <div className="h-4 w-3/4 rounded bg-white/10" />
         <div className="h-4 w-full rounded bg-white/10" />
         <div className="h-4 w-5/6 rounded bg-white/10" />
@@ -34,7 +34,7 @@ function Projects() {
           </p>
         )}
 
-        <div className="grid gap-5 sm:gap-6 sm:gap-8 md:grid-cols-2">
+        <div className="grid gap-5 sm:gap-8 md:grid-cols-2">
           {loading
             ? Array.from({ length: 4 }).map((_, i) => <ProjectSkeleton key={i} />)
             : projects.map((project, index) => (

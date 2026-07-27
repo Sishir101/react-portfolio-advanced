@@ -10,7 +10,7 @@ function SectionHeading({ eyebrow, title, subtitle }) {
         {title}
       </h2>
       {subtitle && (
-        <p className="mx-auto mt-3 sm:mt-4 max-w-2xl text-sm sm:text-base sm:text-lg text-slate-400 leading-7 sm:leading-relaxed">
+        <p className="mx-auto mt-3 sm:mt-4 max-w-2xl text-sm sm:text-lg text-slate-400 leading-7 sm:leading-relaxed">
           {subtitle}
         </p>
       )}

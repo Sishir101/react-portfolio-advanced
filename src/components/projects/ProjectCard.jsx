@@ -6,10 +6,10 @@ function ProjectCard({ project, index }) {
     <AnimateIn delay={index * 0.08} className="h-full">
       <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm transition hover:border-cyan-400/40 hover:bg-white/[0.07] hover:shadow-[0_0_40px_rgba(34,211,238,0.12)]">
         <div
-          className={`relative flex h-36 sm:h-44 items-end gap-2 bg-gradient-to-br p-5 sm:p-6 sm:p-8 ${project.gradient}`}
+          className={`relative flex h-36 sm:h-44 items-end gap-2 bg-gradient-to-br p-5 sm:p-8 ${project.gradient}`}
         >
           <div className="absolute inset-0 bg-[#030712]/40 transition group-hover:bg-[#030712]/25" />
-          <h3 className="relative z-10 text-lg sm:text-xl sm:text-2xl font-bold text-white leading-tight break-words">{project.title}</h3>
+          <h3 className="relative z-10 text-lg sm:text-2xl font-bold text-white leading-tight break-words">{project.title}</h3>
           {project.source === "github" && project.stars != null && (
             <span className="relative z-10 ml-auto rounded-full bg-black/40 px-2 py-0.5 text-[11px] sm:text-xs text-slate-300 flex-shrink-0">
               ★ {project.stars}
@@ -17,7 +17,7 @@ function ProjectCard({ project, index }) {
           )}
         </div>
 
-        <div className="flex flex-1 flex-col p-5 sm:p-6 sm:p-8">
+        <div className="flex flex-1 flex-col p-5 sm:p-8">
           <p className="mb-4 sm:mb-5 flex-1 text-slate-400 leading-relaxed text-sm sm:text-base">{project.description}</p>
 
           <div className="mb-5 sm:mb-6 flex flex-wrap gap-1.5 sm:gap-2">
