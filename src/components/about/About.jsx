@@ -27,22 +27,22 @@ function About() {
   }, [profile]);
 
   return (
-    <section id="about" className="relative scroll-mt-24 bg-[#0B1120] py-24 sm:py-28">
+    <section id="about" className="relative scroll-mt-24 bg-[#0B1120] py-16 sm:py-28">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -left-32 top-20 h-96 w-96 rounded-full bg-cyan-500/10 blur-[120px]" />
-        <div className="absolute -right-32 bottom-10 h-96 w-96 rounded-full bg-purple-600/10 blur-[120px]" />
+        <div className="absolute -left-32 top-20 h-80 w-80 sm:h-96 sm:w-96 rounded-full bg-cyan-500/10 blur-[100px] sm:blur-[120px]" />
+        <div className="absolute -right-32 bottom-10 h-80 w-80 sm:h-96 sm:w-96 rounded-full bg-purple-600/10 blur-[100px] sm:blur-[120px]" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 md:px-8">
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-6 md:px-8">
         <SectionHeading
           eyebrow="About Me"
           title="Who I Am"
           subtitle="A developer who enjoys turning ideas into polished, user-friendly products."
         />
 
-        <div className="grid items-center gap-12 lg:gap-16 lg:grid-cols-2">
+        <div className="grid items-center gap-10 lg:gap-16 lg:grid-cols-2">
           <AnimateIn>
-            <div className="space-y-5 text-lg leading-8 text-slate-300">
+            <div className="space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 text-slate-300">
               <p>
                 I&apos;m <span className="font-semibold text-cyan-400">Sishir Ranjan Sanbad</span>,
                 an MCA student at KIIT University with a passion for Full Stack Development and
@@ -66,14 +66,14 @@ function About() {
           <AnimateIn delay={0.15}>
             <div
               ref={ref}
-              className="grid grid-cols-2 gap-5 sm:gap-6 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-4"
+              className="grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-4"
             >
               {highlights.map((item) => (
                 <div
                   key={item.label}
-                  className="rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8 text-center backdrop-blur-sm transition hover:border-cyan-400/40 hover:bg-white/[0.08]"
+                  className="rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-8 text-center backdrop-blur-sm transition hover:border-cyan-400/40 hover:bg-white/[0.08]"
                 >
-                  <p className="text-3xl sm:text-4xl font-bold text-white break-words">
+                  <p className="text-2xl sm:text-4xl font-bold text-white break-words">
                     {item.noCount ? (
                       item.value
                     ) : inView ? (
@@ -82,7 +82,7 @@ function About() {
                       `0${item.suffix}`
                     )}
                   </p>
-                  <p className="mt-2 text-xs sm:text-sm font-medium text-slate-400 leading-tight">{item.label}</p>
+                  <p className="mt-1 sm:mt-2 text-[11px] sm:text-sm font-medium text-slate-400 leading-tight">{item.label}</p>
                 </div>
               ))}
             </div>

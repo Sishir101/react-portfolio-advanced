@@ -6,20 +6,20 @@ function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-white/10 bg-[#030712] py-10">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 md:px-8 md:flex-row">
-        <p className="flex items-center gap-1 text-sm text-slate-400 text-center md:text-left leading-relaxed">
+    <footer className="border-t border-white/10 bg-[#030712] py-8 sm:py-10">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-5 sm:px-6 md:px-8 md:flex-row sm:gap-6">
+        <p className="flex items-center gap-1 text-xs sm:text-sm text-slate-400 text-center md:text-left leading-relaxed">
           © {year} Sishir Ranjan Sanbad. Built with React & Tailwind
           <FaHeart className="mx-1 text-red-400" aria-hidden />
         </p>
 
-        <div className="flex items-center gap-5 md:gap-6">
+        <div className="flex items-center gap-4 sm:gap-5 md:gap-6">
           <Link
             to="home"
             smooth
             duration={500}
             offset={-80}
-            className="cursor-pointer text-sm text-slate-400 transition hover:text-cyan-400"
+            className="cursor-pointer text-xs sm:text-sm text-slate-400 transition hover:text-cyan-400"
           >
             Back to top
           </Link>

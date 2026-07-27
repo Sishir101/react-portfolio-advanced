@@ -16,11 +16,11 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-white/5 backdrop-blur-xl">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 md:px-8">
+      <div className="mx-auto flex h-16 sm:h-20 max-w-7xl items-center justify-between px-4 sm:px-5 md:px-8">
         <Link
           to="home"
           {...scrollProps}
-          className="cursor-pointer text-2xl font-bold tracking-wide md:text-3xl"
+          className="cursor-pointer text-xl sm:text-2xl font-bold tracking-wide md:text-3xl"
           onClick={closeMenu}
         >
           Sishir<span className="text-cyan-400">.</span>
@@ -43,7 +43,7 @@ function Navbar() {
 
         <button
           type="button"
-          className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-xl text-white transition hover:border-cyan-400/40 hover:text-cyan-400 lg:hidden"
+          className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg border border-white/10 text-lg sm:text-xl text-white transition hover:border-cyan-400/40 hover:text-cyan-400 lg:hidden"
           onClick={() => setOpen((prev) => !prev)}
           aria-label={open ? "Close menu" : "Open menu"}
         >
@@ -52,15 +52,15 @@ function Navbar() {
       </div>
 
       {open && (
-        <div className="border-t border-white/10 bg-[#030712]/95 px-5 py-6 lg:hidden">
-          <ul className="flex flex-col gap-2">
+        <div className="border-t border-white/10 bg-[#030712]/95 px-4 sm:px-5 py-5 sm:py-6 lg:hidden">
+          <ul className="flex flex-col gap-1.5 sm:gap-2">
             {navLinks.map((item) => (
               <li key={item.id}>
                 <Link
                   to={item.link}
                   {...scrollProps}
                   activeClass="text-cyan-400"
-                  className="block cursor-pointer py-3 px-2 rounded-lg text-base text-gray-300 transition hover:text-cyan-400 hover:bg-white/5"
+                  className="block cursor-pointer py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg text-sm sm:text-base text-gray-300 transition hover:text-cyan-400 hover:bg-white/5"
                   onClick={closeMenu}
                 >
                   {item.title}

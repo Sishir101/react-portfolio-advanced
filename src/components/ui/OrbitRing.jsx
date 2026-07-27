@@ -19,13 +19,11 @@ export default function OrbitRing({ items, radius = 280, duration = 18 }) {
               transform: `rotate(${angle}deg) translateX(${radius}px)`,
             }}
           >
-            {/* Cancel arm angle so badge starts upright */}
             <div
               style={{
                 transform: `rotate(${-angle}deg) translate(-50%, -50%)`,
               }}
             >
-              {/* Cancel parent spin so text never rotates */}
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration, repeat: Infinity, ease: "linear" }}
