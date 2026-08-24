@@ -34,6 +34,7 @@ export const supplementalProjects = [
     demo: null,
     gradient: "from-emerald-500/40 to-cyan-600/40",
     source: "local",
+    images: ["/assets/projects/meditrust-login.png"],
   },
   {
     id: "advanced-portfolio",

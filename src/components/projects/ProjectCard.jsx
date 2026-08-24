@@ -8,6 +8,16 @@ function ProjectCard({ project, index }) {
         <div
           className={`relative flex h-36 sm:h-44 items-end gap-2 bg-gradient-to-br p-5 sm:p-8 ${project.gradient}`}
         >
+          {project.images && project.images.length > 0 && (
+            <div className="absolute inset-0">
+              <img
+                src={project.images[0]}
+                alt={project.title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-[#030712]/60 transition group-hover:bg-[#030712]/40" />
+            </div>
+          )}
           <div className="absolute inset-0 bg-[#030712]/40 transition group-hover:bg-[#030712]/25" />
           <h3 className="relative z-10 text-lg sm:text-2xl font-bold text-white leading-tight break-words">{project.title}</h3>
           {project.source === "github" && project.stars != null && (
