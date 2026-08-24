@@ -89,13 +89,13 @@ function Hero() {
             MCA student with a strong interest in Full Stack Development and software engineering. Skilled in Java, JavaScript, MySQL, HTML and CSS. I have shipped two major projects — MediTrust, a full-stack healthcare platform, and this Advanced Portfolio with live GitHub integration.
           </p>
 
-          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-5">
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6">
             <Link
               to="projects"
               smooth
               duration={500}
               offset={-80}
-              className="cursor-pointer text-center rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 px-8 sm:px-10 py-4 sm:py-4.5 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:from-cyan-400 hover:to-blue-400"
+              className="cursor-pointer text-center rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 px-10 sm:px-12 py-5 sm:py-6 text-base sm:text-lg font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] hover:from-cyan-400 hover:to-blue-400"
             >
               View Projects
             </Link>
@@ -103,18 +103,18 @@ function Hero() {
             <a
               href="/resume.pdf"
               download
-              className="text-center rounded-xl border-2 border-cyan-400 px-8 sm:px-10 py-4 sm:py-4.5 font-semibold text-cyan-400 transition-all duration-300 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.4)]"
+              className="text-center rounded-xl border-2 border-cyan-400 px-10 sm:px-12 py-5 sm:py-6 text-base sm:text-lg font-semibold text-cyan-400 transition-all duration-300 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_25px_rgba(34,211,238,0.5)]"
             >
               Download Resume
             </a>
           </div>
-          <div className="mt-6 sm:mt-8 flex items-center gap-3 sm:gap-4">
+          <div className="mt-6 sm:mt-8 flex items-center gap-4 sm:gap-5">
 
   <a
     href="https://github.com/Sishir101"
     target="_blank"
     rel="noreferrer"
-    className="flex items-center gap-2 h-12 px-5 sm:h-14 sm:px-6 rounded-full bg-white/10 border border-cyan-400/30 text-cyan-400 text-sm sm:text-base backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white"
+    className="flex items-center gap-3 h-14 px-6 sm:h-16 sm:px-8 rounded-full bg-white/10 border-2 border-cyan-400/40 text-cyan-400 text-base sm:text-lg backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.3)]"
     aria-label="GitHub"
   >
     <FaGithub />
@@ -125,7 +125,7 @@ function Hero() {
     href="https://www.linkedin.com/in/sishir-sanbad/"
     target="_blank"
     rel="noreferrer"
-    className="flex items-center gap-2 h-12 px-5 sm:h-14 sm:px-6 rounded-full bg-white/10 border border-cyan-400/30 text-cyan-400 text-sm sm:text-base backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white"
+    className="flex items-center gap-3 h-14 px-6 sm:h-16 sm:px-8 rounded-full bg-white/10 border-2 border-cyan-400/40 text-cyan-400 text-base sm:text-lg backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.3)]"
     aria-label="LinkedIn"
   >
     <FaLinkedin />
@@ -134,7 +134,7 @@ function Hero() {
 
   <a
     href="mailto:sanbadsishirranjan772@gmail.com"
-    className="flex items-center gap-2 h-12 px-5 sm:h-14 sm:px-6 rounded-full bg-white/10 border border-cyan-400/30 text-cyan-400 text-sm sm:text-base backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white"
+    className="flex items-center gap-3 h-14 px-6 sm:h-16 sm:px-8 rounded-full bg-white/10 border-2 border-cyan-400/40 text-cyan-400 text-base sm:text-lg backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.3)]"
     aria-label="Email"
   >
     <MdEmail />
