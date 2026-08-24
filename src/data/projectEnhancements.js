@@ -46,6 +46,7 @@ export const supplementalProjects = [
     demo: null,
     gradient: "from-fuchsia-500/40 to-purple-600/40",
     source: "local",
+    images: ["/assets/projects/portfolio-screenshot.png"],
   },
 
   /* ====== MINOR / SMALL PROJECTS ====== */
