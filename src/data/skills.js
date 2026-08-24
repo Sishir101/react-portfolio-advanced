@@ -7,8 +7,9 @@ import {
   FaCss3Alt,
   FaJs,
   FaBootstrap,
+  FaPython,
 } from "react-icons/fa";
-import { SiMysql, SiTailwindcss, SiExpress, SiPostman } from "react-icons/si";
+import { SiMysql, SiTailwindcss, SiExpress, SiPostman, SiC } from "react-icons/si";
 
 export const skillCategories = [
   {
@@ -16,6 +17,8 @@ export const skillCategories = [
     skills: [
       { name: "Java", icon: FaJava, level: 88, detail: "OOP · Collections" },
       { name: "JavaScript", icon: FaJs, level: 85, detail: "DOM · ES6" },
+      { name: "Python", icon: FaPython, level: 82, detail: "Scripting · Data" },
+      { name: "C", icon: SiC, level: 80, detail: "Pointers · Memory" },
     ],
   },
   {
