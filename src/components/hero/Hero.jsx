@@ -108,13 +108,13 @@ function Hero() {
               Download Resume
             </a>
           </div>
-          <div className="mt-6 sm:mt-8 flex items-center gap-4 sm:gap-5">
+          <div className="mt-6 sm:mt-8 flex items-center justify-center gap-4 sm:gap-5">
 
   <a
     href="https://github.com/Sishir101"
     target="_blank"
     rel="noreferrer"
-    className="flex items-center gap-3 h-14 px-12 sm:h-16 sm:px-14 rounded-full bg-white/10 border-2 border-cyan-400/40 text-cyan-400 text-base sm:text-lg backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] min-w-[180px] sm:min-w-[200px]"
+    className="flex items-center justify-center gap-3 h-14 px-12 sm:h-16 sm:px-14 rounded-full bg-white/10 border-2 border-cyan-400/40 text-cyan-400 text-base sm:text-lg backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] min-w-[180px] sm:min-w-[200px]"
     aria-label="GitHub"
   >
     <FaGithub />
@@ -125,7 +125,7 @@ function Hero() {
     href="https://www.linkedin.com/in/sishir-sanbad/"
     target="_blank"
     rel="noreferrer"
-    className="flex items-center gap-3 h-14 px-12 sm:h-16 sm:px-14 rounded-full bg-white/10 border-2 border-cyan-400/40 text-cyan-400 text-base sm:text-lg backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] min-w-[180px] sm:min-w-[200px]"
+    className="flex items-center justify-center gap-3 h-14 px-12 sm:h-16 sm:px-14 rounded-full bg-white/10 border-2 border-cyan-400/40 text-cyan-400 text-base sm:text-lg backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] min-w-[180px] sm:min-w-[200px]"
     aria-label="LinkedIn"
   >
     <FaLinkedin />
@@ -134,7 +134,7 @@ function Hero() {
 
   <a
     href="mailto:sanbadsishirranjan772@gmail.com"
-    className="flex items-center gap-3 h-14 px-12 sm:h-16 sm:px-14 rounded-full bg-white/10 border-2 border-cyan-400/40 text-cyan-400 text-base sm:text-lg backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] min-w-[180px] sm:min-w-[200px]"
+    className="flex items-center justify-center gap-3 h-14 px-12 sm:h-16 sm:px-14 rounded-full bg-white/10 border-2 border-cyan-400/40 text-cyan-400 text-base sm:text-lg backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] min-w-[180px] sm:min-w-[200px]"
     aria-label="Email"
   >
     <MdEmail />
