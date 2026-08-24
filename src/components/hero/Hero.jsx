@@ -31,7 +31,7 @@ const techStack = [
 
 function Hero() {
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden bg-[#030712] pt-28 pb-12 sm:pt-32 sm:pb-16 scroll-mt-24">
+    <section id="home" className="relative min-h-screen overflow-hidden bg-[#030712] pt-36 pb-12 sm:pt-40 sm:pb-16 scroll-mt-24">
           {/* Background */}
      <div className="absolute inset-0 overflow-hidden">
 
