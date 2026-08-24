@@ -29,27 +29,18 @@ function Skills() {
                     }
                     return (
                       <li key={skill.name}>
-                        <div className="mb-2 flex items-center justify-between gap-2 sm:gap-3">
-                          <span className="flex items-center gap-2 text-slate-200 min-w-0 text-sm sm:text-base">
-                            <Icon className="text-base sm:text-lg text-cyan-400 flex-shrink-0" />
-                            <span className="min-w-0">
-                              <span className="font-medium block">
-                                {skill.name}
-                              </span>
-                              {skill.detail && (
-                                <span className="text-[11px] sm:text-xs text-slate-500 leading-none block mt-0.5">
-                                  {skill.detail}
-                                </span>
-                              )}
+                        <div className="flex items-center gap-2 sm:gap-3">
+                          <Icon className="text-base sm:text-lg text-cyan-400 flex-shrink-0" />
+                          <span className="min-w-0 text-sm sm:text-base text-slate-200">
+                            <span className="font-medium block">
+                              {skill.name}
                             </span>
+                            {skill.detail && (
+                              <span className="text-[11px] sm:text-xs text-slate-500 leading-none block mt-0.5">
+                                {skill.detail}
+                              </span>
+                            )}
                           </span>
-                          <span className="text-xs sm:text-sm text-slate-500 flex-shrink-0">{skill.level}%</span>
-                        </div>
-                        <div className="h-1.5 sm:h-2 overflow-hidden rounded-full bg-white/10">
-                          <div
-                            className="h-full rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-1000"
-                            style={{ width: `${skill.level}%` }}
-                          />
                         </div>
                       </li>
                     );
