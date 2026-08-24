@@ -43,7 +43,10 @@ function Hero() {
 
 </div>
 
-      <div className="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center gap-10 sm:gap-16 px-5 sm:px-6 md:px-8 lg:grid-cols-2 py-12 sm:py-16 pt-48 sm:pt-52">
+      {/* Spacer to account for fixed navbar */}
+      <div className="h-16 sm:h-20" />
+
+      <div className="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center gap-10 sm:gap-16 px-5 sm:px-6 md:px-8 lg:grid-cols-2 py-12 sm:py-16">
         {/* Left */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
