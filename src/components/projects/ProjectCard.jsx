@@ -10,11 +10,24 @@ function ProjectCard({ project, index }) {
         >
           {project.images && project.images.length > 0 && (
             <div className="absolute inset-0">
-              <img
-                src={project.images[0]}
-                alt={project.title}
-                className="w-full h-full object-cover"
-              />
+              {project.images.length === 1 ? (
+                <img
+                  src={project.images[0]}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="grid grid-cols-2 h-full">
+                  {project.images.slice(0, 4).map((img, idx) => (
+                    <img
+                      key={idx}
+                      src={img}
+                      alt={`${project.title} ${idx + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  ))}
+                </div>
+              )}
               <div className="absolute inset-0 bg-[#030712]/60 transition group-hover:bg-[#030712]/40" />
             </div>
           )}
