@@ -95,7 +95,7 @@ function Hero() {
               smooth
               duration={500}
               offset={-80}
-              className="cursor-pointer text-center rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 px-6 sm:px-8 py-3 sm:py-3.5 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:from-cyan-400 hover:to-blue-400"
+              className="cursor-pointer text-center rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 px-8 sm:px-10 py-4 sm:py-4.5 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:from-cyan-400 hover:to-blue-400"
             >
               View Projects
             </Link>
@@ -103,7 +103,7 @@ function Hero() {
             <a
               href="/resume.pdf"
               download
-              className="text-center rounded-xl border-2 border-cyan-400 px-6 sm:px-8 py-3 sm:py-3.5 font-semibold text-cyan-400 transition-all duration-300 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.4)]"
+              className="text-center rounded-xl border-2 border-cyan-400 px-8 sm:px-10 py-4 sm:py-4.5 font-semibold text-cyan-400 transition-all duration-300 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.4)]"
             >
               Download Resume
             </a>
@@ -114,7 +114,7 @@ function Hero() {
     href="https://github.com/Sishir101"
     target="_blank"
     rel="noreferrer"
-    className="flex items-center gap-2 h-11 px-4 sm:h-12 sm:px-5 rounded-full bg-white/10 border border-cyan-400/30 text-cyan-400 text-sm sm:text-base backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white"
+    className="flex items-center gap-2 h-12 px-5 sm:h-14 sm:px-6 rounded-full bg-white/10 border border-cyan-400/30 text-cyan-400 text-sm sm:text-base backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white"
     aria-label="GitHub"
   >
     <FaGithub />
@@ -125,7 +125,7 @@ function Hero() {
     href="https://www.linkedin.com/in/sishir-sanbad/"
     target="_blank"
     rel="noreferrer"
-    className="flex items-center gap-2 h-11 px-4 sm:h-12 sm:px-5 rounded-full bg-white/10 border border-cyan-400/30 text-cyan-400 text-sm sm:text-base backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white"
+    className="flex items-center gap-2 h-12 px-5 sm:h-14 sm:px-6 rounded-full bg-white/10 border border-cyan-400/30 text-cyan-400 text-sm sm:text-base backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white"
     aria-label="LinkedIn"
   >
     <FaLinkedin />
@@ -134,7 +134,7 @@ function Hero() {
 
   <a
     href="mailto:sanbadsishirranjan772@gmail.com"
-    className="flex items-center gap-2 h-11 px-4 sm:h-12 sm:px-5 rounded-full bg-white/10 border border-cyan-400/30 text-cyan-400 text-sm sm:text-base backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white"
+    className="flex items-center gap-2 h-12 px-5 sm:h-14 sm:px-6 rounded-full bg-white/10 border border-cyan-400/30 text-cyan-400 text-sm sm:text-base backdrop-blur-xl transition hover:scale-110 hover:bg-cyan-500 hover:text-white"
     aria-label="Email"
   >
     <MdEmail />
